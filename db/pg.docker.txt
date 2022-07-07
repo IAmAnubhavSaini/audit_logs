@@ -1,0 +1,3 @@
+# docker command
+
+docker run --name="audit_logs_db" -p10901:5432 -ePOSTGRES_DB=localnotes -ePOSTGRES_USER="audit_logs_user" -ePOSTGRES_PASSWORD="password" -ePGDATA=/var/lib/postgresql/data/pgdata -v /Users/anubhav/dockerdata/audit_logs:/var/lib/postgresql/data -d postgres
